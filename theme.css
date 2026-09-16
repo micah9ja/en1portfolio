@@ -9,25 +9,28 @@
 
 :root {
     /* Brand colors */
-    --color-primary: #4a7a6e;       /* deep teal-green: headers, nav, links */
-    --color-primary-dark: #35594f;  /* darker teal: hover/active states */
-    --color-accent: #e0a66a;        /* warm orange: cards, highlights */
-    --color-accent-dark: #c98a49;   /* darker orange: hover states */
+    --color-primary: #0f172a;       /* deep midnight navy */
+    --color-primary-dark: #111827;  /* darker navy */
+    --color-accent: #7c3aed;        /* vivid violet */
+    --color-accent-dark: #5b21b6;   /* deeper violet */
+    --color-highlight: #67e8f9;     /* aqua accent */
 
     /* Text */
-    --color-text: #2d2420;          /* main body text */
-    --color-text-muted: #4d3a2c;    /* secondary text, links on light bg */
-    --color-text-on-dark: #ffffff;  /* text placed over photos/dark overlays */
+    --color-text: #e2e8f0;          /* main body text */
+    --color-text-muted: #cbd5e1;    /* secondary text */
+    --color-text-on-dark: #f8fafc;  /* text placed over dark overlays */
 
     /* Backgrounds */
-    --color-bg-page: #f4f4f4;       /* page background on activity/project pages */
-    --color-bg-card: #ffffff;       /* white card/container background */
-    --color-bg-overlay: rgba(74, 122, 110, 0.5); /* translucent header/hero overlay */
+    --color-bg-page: #020817;       /* page background */
+    --color-bg-card: rgba(15, 23, 42, 0.5); /* glass card */
+    --color-bg-overlay: rgba(15, 23, 42, 0.52); /* translucent overlay */
+    --color-border-glass: rgba(255, 255, 255, 0.18);
+    --color-glow: rgba(103, 232, 249, 0.28);
 
     /* Typography */
-    --font-body: Arial, Helvetica, sans-serif;
+    --font-body: "Segoe UI", Arial, Helvetica, sans-serif;
 
     /* Shape */
-    --radius: 10px;
+    --radius: 22px;
     --container-max: 800px;
 }
