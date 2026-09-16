@@ -1,13 +1,6 @@
 # My Engineering Portfolio
 
-This is my portfolio site for our intro-to-engineering/robotics course. It's
-a plain HTML/CSS website — no build tools, nothing to install — that
-documents each in-class activity and project as I complete it, and doubles
-as a public page I can point people to.
-
-If you're reading this in **Dr. E's template repository**, this isn't your
-portfolio yet — it's the starting point. Follow **Setup**, below, to turn it
-into your own live, personalized site.
+This is my portfolio site for my intro-to-engineering/robotics course.
 
 ## Setup: from template to live portfolio
 
