@@ -180,6 +180,8 @@ body::before {
 }
 
 .project-card {
+    --tilt-x: 0deg;
+    --tilt-y: 0deg;
     padding: 0;
     margin: 0;
     border-radius: var(--radius);
@@ -188,13 +190,14 @@ body::before {
     box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+    transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+    transition: transform 0.16s ease-out, border-color 0.28s ease, box-shadow 0.28s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px) scale(1.01);
+    transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) scale(1.01);
     border-color: rgba(103, 232, 249, 0.5);
-    box-shadow: 0 22px 45px rgba(103, 232, 249, 0.12), 0 10px 30px rgba(124, 58, 237, 0.18);
+    box-shadow: 0 18px 28px -16px var(--color-glow);
 }
 
 .project-link {
@@ -204,11 +207,6 @@ body::before {
     color: var(--color-text-on-dark);
     text-decoration: none;
     border-radius: var(--radius);
-    transition: background 0.25s ease;
-}
-
-.project-link:hover {
-    background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(103, 232, 249, 0.08));
 }
 
 .project-title {
